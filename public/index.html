@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compatto Furnishing</title>
+    <link rel="stylesheet" href="./tailwind-output.css" />
+  </head>
+  <body class="bg-[#f9f6f1] font-sans text-gray-900 overflow-x-hidden">
+    <div class="container-custom">
+      <!-- Navbar -->
+      <nav
+        class="max-w-[1120px] px-8 py-1 sm:px-0 sm:py-0 mx-auto sticky top-4 sm:top-0 z-50 bg-white shadow border-b border-gray-200 rounded-full sm:rounded-none"
+      >
+        <div class="flex items-center justify-between gap-4 p-3">
+          <!-- Logo -->
+          <a href="/">
+            <img src="./assets/images/logo.svg" alt="Logo" class="h-8" />
+          </a>
+
+          <!-- Desktop menu -->
+          <div class="flex sm:hidden xs:hidden gap-6">
+            <a href="/services" class="text-sm hover:text-[#6a5142]"
+              >Our Services</a
+            >
+            <a href="/about" class="text-sm hover:text-[#6a5142]">Who We Are</a>
+            <a href="/choose-us" class="text-sm hover:text-[#6a5142]"
+              >Why Choose Us</a
+            >
+          </div>
+
+          <a
+            href="/contact"
+            class="ml-4 btn btn-primary inline-block sm:hidden xs:hidden"
+            >Contact us</a
+          >
+
+          <!-- Hamburger (Mobile) -->
+          <button
+            id="mobile-menu-toggle"
+            class="hamburger hidden sm:flex flex-col justify-center items-center w-10 h-10"
+            aria-label="Open menu"
+          >
+            <span class="hamburger-line block w-7 bg-gray-800"></span>
+            <span class="hamburger-line block w-7 bg-gray-800"></span>
+            <span class="hamburger-line block w-7 bg-gray-800"></span>
+          </button>
+        </div>
+
+        <!-- Mobile menu (hidden by default) -->
+        <div id="mobile-menu" style="display: none">
+          <div
+            class="mobile-menu-content flex flex-col items-center justify-center gap-4 closed"
+            style="width: 100%"
+          >
+            <a href="/about" class="text-sm block hover:text-[#7aa6b3]"
+              >Who We Are</a
+            >
+            <a href="/services" class="text-sm block hover:text-[#7aa6b3]"
+              >Our Services</a
+            >
+            <a href="/choose-us" class="text-sm block hover:text-[#7aa6b3]"
+              >Why Choose Us</a
+            >
+            <a href="/contact" class="text-[#EE6C29] block">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section
+        class="w-full relative overflow-hidden rounded-[24px] sm:rounded-none mb-20 md:mb-4 sm:mb-4 xs:mb-4"
+      >
+        <img
+          src="./assets/images/hero-image.jpg"
+          alt="Furnishing Room"
+          class="w-full object-cover h-[700px] xs:h-[500px]"
+        />
+        <div
+          class="absolute inset-0 bg-black bg-opacity-40 flex flex-row sm:flex-col justify-between sm:justify-end p-12 sm:p-6 text-white items-end sm:items-start"
+        >
+          <h1 class="mb-4">
+            Bringing <span class="text-[#e0d8c8]">Simplicity</span><br />In The
+            Furnishing Market
+          </h1>
+          <div class="flex flex-col gap-4 mb-10">
+            <span class="max-w-lg hero-text">
+              Compatto simplifies the complex process of furnishing
+              all-inclusive, boutique & high-end hotels, and luxury residences
+              in Greece & Cyprus.
+            </span>
+            <button class="btn-secondary">Start Your Furnishing Journey</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section
+        class="mx-auto flex flex-row md:flex-col-reverse sm:flex-col-reverse xs:flex-col-reverse justify-center items-stretch gap-4 min-h-[360px] sm:h-full pb-[4%] pl-[4%] pr-[4%]"
+      >
+        <!-- Stats Box -->
+        <div
+          class="min-h-[280px] relative flex flex-col justify-between bg-gradient-to-b from-[#cba98e] to-[#a8846d] rounded-xl text-white p-8 overflow-hidden"
+        >
+          <h4 class="uppercase text-sm tracking-wider mb-8 z-10 relative">
+            Our Company<br />In Numbers
+          </h4>
+          <div class="flex items-end gap-8 z-10 relative">
+            <div>
+              <div class="text-5xl leading-none">150+</div>
+              <div class="text-base mt-2">Furniture Suppliers</div>
+            </div>
+            <div>
+              <div class="text-md leading-none">15+</div>
+              <div class="text-sm mt-1">Years of Industry<br />Experience</div>
+            </div>
+          </div>
+          <!-- Decorative Icon -->
+          <img
+            src="./assets/images/icon.svg"
+            alt="Decorative Icon"
+            class="absolute top-6 right-6 w-24 h-24 opacity-30 pointer-events-none select-none z-0"
+          />
+        </div>
+
+        <!-- Who We Are Box -->
+        <div
+          class="flex flex-row bg-[#efebe2] rounded-xl shadow-sm overflow-hidden h-full max-w-[920px]"
+        >
+          <div class="flex flex-col gap-1 p-8">
+            <h2>Who <span class="text-[#8b6f55]">We</span> Are</h2>
+            <p class="text-base text-gray-700">
+              At Compatto, we understand the challenges of creating exceptional
+              spaces that blend elegance, quality, and functionality.<br /><br />
+              As Greece's premier furniture solutions provider, we've made it
+              our mission to simplify the furnishing process, ensuring that
+              every project is executed flawlessly from initial consultation to
+              final installation.
+            </p>
+          </div>
+
+          <!-- sağdaki resim (yarım dairenin önünde) -->
+          <img
+            src="./assets/images/who-we-are.jpg"
+            alt="Who We Are"
+            class="object-cover h-[360px] rounded-none md:hidden sm:hidden"
+          />
+        </div>
+      </section>
+    </div>
+
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+      const menuToggle = document.getElementById("mobile-menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const mobileMenuContent = mobileMenu.querySelector(
+        ".mobile-menu-content"
+      );
+
+      let isMenuOpen = false;
+      menuToggle.addEventListener("click", () => {
+        isMenuOpen = !isMenuOpen;
+        if (isMenuOpen) {
+          mobileMenu.style.display = "flex";
+          setTimeout(() => {
+            mobileMenuContent.classList.add("open");
+            mobileMenuContent.classList.remove("closed");
+          }, 10);
+          menuToggle.classList.add("active");
+        } else {
+          mobileMenuContent.classList.remove("open");
+          mobileMenuContent.classList.add("closed");
+          menuToggle.classList.remove("active");
+          setTimeout(() => {
+            if (!isMenuOpen) mobileMenu.style.display = "none";
+          }, 400);
+        }
+      });
+    </script>
+  </body>
+</html>

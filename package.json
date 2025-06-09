@@ -1,0 +1,28 @@
+{
+  "name": "compatto-furnishing",
+  "version": "1.0.0",
+  "description": "Compatto Furnishing - Simplifying the furnishing market",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/assets/css/input.css -o ./public/tailwind-output.css --watch",
+    "build": "tailwindcss -i ./src/assets/css/input.css -o ./public/tailwind-output.css --minify",
+    "serve": "npx http-server public -p 3000 -o"
+  },
+  "keywords": [
+    "furnishing",
+    "tailwindcss",
+    "responsive",
+    "design"
+  ],
+  "author": "Compatto Furnishing",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "@stripe/stripe-js": "^5.6.0"
+  }
+}

@@ -1,0 +1,49 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap");
+
+/* Font Family Definitions for Tailwind */
+.font-interTight {
+  font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-archivo {
+  font-family: "Archivo", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Font Family Definitions for Tailwind */
+.font-roboto {
+  font-family: "Roboto", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-openSans {
+  font-family: "Open Sans", "Inter", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", "Inter", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+}
+
+/* Fallback for custom font names in Tailwind config */
+.font-bebasNeue {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-cabinetGrotesk {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-clashDisplay {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-familjenGrotesk {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.font-switzer {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
