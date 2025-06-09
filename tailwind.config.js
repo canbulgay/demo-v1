@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./public/**/*.{html,js,ts,jsx,tsx,mdx}",
-    "./src/**/*.{html,js,ts,jsx,tsx,mdx,css}",
+    "./assets/**/*.{html,js,ts,jsx,tsx,mdx,css}",
   ],
   theme: {
     screens: {

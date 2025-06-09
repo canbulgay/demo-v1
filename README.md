@@ -8,57 +8,88 @@ A modern, responsive website for Compatto Furnishing - Greece's premier furnitur
 - 📱 Mobile-first approach with custom breakpoints
 - 🚀 Fast loading with optimized CSS
 - 🎯 Clean, professional UI for the furnishing industry
-- 🔤 Google Fonts integration (Inter, Archivo, Poppins, Montserrat, etc.)
+- 🔤 Google Fonts integration (Inter, Archivo, Inter Tight)
 - 🎨 Custom color palette and design system
+- ♻️ Refactored codebase following best practices
 
 ## Project Structure
 
 ```
 demo/
 ├── public/
-│   └── index.html                    # Main HTML file
-├── src/
+│   ├── index.html                    # Main HTML file
+│   ├── tailwind-output.css           # Generated CSS (after build)
 │   └── assets/
-│       └── css/
-│           ├── input.css             # Tailwind CSS directives
-│           ├── global.css            # Global styles and CSS variables
-│           ├── fonts.css             # Google Fonts imports
-│           └── tailwind-output.css   # Generated CSS (after build)
-├── tailwind.config.js                # Tailwind configuration with custom theme
+│       └── images/                   # Image assets
+├── assets/
+│   └── css/
+│       ├── input.css                 # Tailwind CSS directives
+│       ├── global.css                # Global styles and utilities
+│       └── fonts.css                 # Google Fonts imports
+├── tailwind.config.js                # Tailwind configuration
 ├── postcss.config.js                 # PostCSS configuration
 ├── package.json                      # Dependencies and scripts
 └── README.md                        # This file
 ```
 
-## Setup Instructions
+## Prerequisites
 
-1. **Install Dependencies**
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
+## Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone <repository-url>
+   cd demo
+   ```
+
+2. **Install dependencies**
    ```bash
    npm install
    ```
 
-2. **Build CSS**
+## Usage
 
-   ```bash
-   # Development (with watch mode)
-   npm run dev
+### Development
 
-   # Production build
-   npm run build
-   ```
+```bash
+# Start development server with CSS watching
+npm run dev
 
-3. **Serve the Website**
-   ```bash
-   npm run serve
-   ```
-   This will start a local server at `http://localhost:3000`
+# Start local server
+npm run start
+# or
+npm run serve
+```
 
-## Development
+### Production
 
-- **Watch Mode**: Run `npm run dev` to automatically rebuild CSS when files change
-- **Production Build**: Run `npm run build` for minified CSS
-- **Local Server**: Run `npm run serve` to view the website locally
+```bash
+# Build for production (minified CSS)
+npm run build
+
+# Clean build artifacts
+npm run clean
+```
+
+### Additional Scripts
+
+```bash
+# Linting (placeholder for future setup)
+npm run lint
+
+# Formatting (placeholder for future setup)
+npm run format
+```
+
+## Development Workflow
+
+1. **Development Mode**: Run `npm run dev` to automatically rebuild CSS when files change
+2. **Local Preview**: Run `npm run start` to view the website at `http://localhost:3000`
+3. **Production Build**: Run `npm run build` for minified CSS output
 
 ## Custom Features
 
@@ -72,16 +103,15 @@ demo/
 - `xs`: max-width 480px
 - `xxs`: max-width 379px
 
-### Available Fonts (Google Fonts)
+### Design System
 
-- **Inter** - Primary font family
+**Typography**
+
+- **Inter Tight** - Primary font family
 - **Archivo** - Modern sans-serif
-- **Poppins** - Clean and geometric
-- **Montserrat** - Professional and readable
-- **Open Sans** - Friendly and approachable
-- **Roboto** - Google's system font
+- **Inter** - System font fallback
 
-### Color Palette
+**Color Palette**
 
 - Primary: `#8b6f55` (Brown)
 - Primary Dark: `#775d47`
@@ -95,7 +125,7 @@ demo/
 1. Push your code to a GitHub repository
 2. Go to Settings > Pages
 3. Select source branch (usually `main` or `master`)
-4. Set folder to `/docs` or `/public`
+4. Set folder to `/public`
 
 ### Netlify
 
@@ -104,12 +134,31 @@ demo/
 3. Set publish directory: `public`
 4. Deploy!
 
+### Vercel
+
+1. Connect your GitHub repository to Vercel
+2. Set build command: `npm run build`
+3. Set output directory: `public`
+4. Deploy!
+
 ## Technologies Used
 
 - **Tailwind CSS** - Utility-first CSS framework
 - **PostCSS** - CSS processing
 - **Autoprefixer** - Vendor prefix automation
-- **Google Fonts** - Web font service for typography
+- **Google Fonts** - Web font service
+
+## Code Quality
+
+This project follows modern frontend best practices:
+
+- ✅ Semantic HTML structure
+- ✅ Tailwind CSS with @apply directives
+- ✅ Responsive design patterns
+- ✅ Clean, maintainable code
+- ✅ Optimized build process
+- ✅ Standard npm script naming
+- ✅ Simplified project structure
 
 ## License
 

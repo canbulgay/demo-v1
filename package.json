@@ -4,9 +4,14 @@
   "description": "Compatto Furnishing - Simplifying the furnishing market",
   "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss -i ./src/assets/css/input.css -o ./public/tailwind-output.css --watch",
-    "build": "tailwindcss -i ./src/assets/css/input.css -o ./public/tailwind-output.css --minify",
-    "serve": "npx http-server public -p 3000 -o"
+    "dev": "tailwindcss -i ./assets/css/input.css -o ./public/tailwind-output.css --watch",
+    "build": "tailwindcss -i ./assets/css/input.css -o ./public/tailwind-output.css --minify",
+    "start": "npx http-server public -p 3000 -o",
+    "serve": "npm run start",
+    "lint": "echo 'No linting configured yet'",
+    "format": "echo 'No formatting configured yet'",
+    "clean": "rm -rf public/tailwind-output.css",
+    "prebuild": "npm run clean"
   },
   "keywords": [
     "furnishing",

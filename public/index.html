@@ -8,17 +8,14 @@
   </head>
   <body class="bg-[#f9f6f1] font-sans text-gray-900 overflow-x-hidden">
     <div class="container-custom">
-      <!-- Navbar -->
       <nav
         class="max-w-[1120px] px-8 py-1 sm:px-0 sm:py-0 mx-auto sticky top-4 sm:top-0 z-50 bg-white shadow border-b border-gray-200 rounded-full sm:rounded-none"
       >
         <div class="flex items-center justify-between gap-4 p-3">
-          <!-- Logo -->
           <a href="/">
             <img src="./assets/images/logo.svg" alt="Logo" class="h-8" />
           </a>
 
-          <!-- Desktop menu -->
           <div class="flex sm:hidden xs:hidden gap-6">
             <a href="/services" class="text-sm hover:text-[#6a5142]"
               >Our Services</a
@@ -35,7 +32,6 @@
             >Contact us</a
           >
 
-          <!-- Hamburger (Mobile) -->
           <button
             id="mobile-menu-toggle"
             class="hamburger hidden sm:flex flex-col justify-center items-center w-10 h-10"
@@ -47,7 +43,6 @@
           </button>
         </div>
 
-        <!-- Mobile menu (hidden by default) -->
         <div id="mobile-menu" style="display: none">
           <div
             class="mobile-menu-content flex flex-col items-center justify-center gap-4 closed"
@@ -67,7 +62,6 @@
         </div>
       </nav>
 
-      <!-- Hero Section -->
       <section
         class="w-full relative overflow-hidden rounded-[24px] sm:rounded-none mb-20 md:mb-4 sm:mb-4 xs:mb-4"
       >
@@ -94,13 +88,11 @@
         </div>
       </section>
 
-      <!-- Stats Section -->
       <section
         class="mx-auto flex flex-row md:flex-col-reverse sm:flex-col-reverse xs:flex-col-reverse justify-center items-stretch gap-4 min-h-[360px] sm:h-full pb-[4%] pl-[4%] pr-[4%]"
       >
-        <!-- Stats Box -->
         <div
-          class="min-h-[280px] relative flex flex-col justify-between bg-gradient-to-b from-[#cba98e] to-[#a8846d] rounded-xl text-white p-8 overflow-hidden"
+          class="md:min-h-[280px] sm:min-h-[280px] xs:min-h-[280px] relative flex flex-col justify-between bg-gradient-to-b from-[#cba98e] to-[#a8846d] rounded-xl text-white p-8 overflow-hidden"
         >
           <h4 class="uppercase text-sm tracking-wider mb-8 z-10 relative">
             Our Company<br />In Numbers
@@ -115,7 +107,6 @@
               <div class="text-sm mt-1">Years of Industry<br />Experience</div>
             </div>
           </div>
-          <!-- Decorative Icon -->
           <img
             src="./assets/images/icon.svg"
             alt="Decorative Icon"
@@ -123,7 +114,6 @@
           />
         </div>
 
-        <!-- Who We Are Box -->
         <div
           class="flex flex-row bg-[#efebe2] rounded-xl shadow-sm overflow-hidden h-full max-w-[920px]"
         >
@@ -139,17 +129,15 @@
             </p>
           </div>
 
-          <!-- sağdaki resim (yarım dairenin önünde) -->
           <img
             src="./assets/images/who-we-are.jpg"
             alt="Who We Are"
-            class="object-cover h-[360px] rounded-none md:hidden sm:hidden"
+            class="object-cover h-[320px] rounded-none md:hidden sm:hidden"
           />
         </div>
       </section>
     </div>
 
-    <!-- JavaScript for mobile menu toggle -->
     <script>
       const menuToggle = document.getElementById("mobile-menu-toggle");
       const mobileMenu = document.getElementById("mobile-menu");
