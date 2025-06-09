@@ -2,6 +2,10 @@
 
 A modern, responsive website for Compatto Furnishing - Greece's premier furniture solutions provider.
 
+## 🌐 Live Demo
+
+**Visit the live website:** [Compatto Furnishing](https://yourusername.github.io/demo/)
+
 ## Features
 
 - 🎨 Modern, responsive design with Tailwind CSS
@@ -36,13 +40,14 @@ demo/
 
 - Node.js (v14 or higher)
 - npm (v6 or higher)
+- Git
 
 ## Installation
 
 1. **Clone the repository**
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/yourusername/demo.git
    cd demo
    ```
 
@@ -91,6 +96,51 @@ npm run format
 2. **Local Preview**: Run `npm run start` to view the website at `http://localhost:3000`
 3. **Production Build**: Run `npm run build` for minified CSS output
 
+## Deployment
+
+### GitHub Pages (Recommended)
+
+1. **Build the project**
+
+   ```bash
+   npm run build
+   ```
+
+2. **Push to GitHub**
+
+   ```bash
+   git add .
+   git commit -m "Build for GitHub Pages"
+   git push origin main
+   ```
+
+3. **Enable GitHub Pages**
+
+   - Go to your repository on GitHub
+   - Navigate to **Settings** → **Pages**
+   - Under **Source**, select **Deploy from a branch**
+   - Choose **main** branch and **/public** folder
+   - Click **Save**
+
+4. **Your site will be available at:**
+   ```
+   https://yourusername.github.io/demo/
+   ```
+
+### Netlify
+
+1. Connect your GitHub repository to Netlify
+2. Set build command: `npm run build`
+3. Set publish directory: `public`
+4. Deploy!
+
+### Vercel
+
+1. Connect your GitHub repository to Vercel
+2. Set build command: `npm run build`
+3. Set output directory: `public`
+4. Deploy!
+
 ## Custom Features
 
 ### Responsive Breakpoints
@@ -118,29 +168,6 @@ npm run format
 - Background: `#f9f6f1` (Light cream)
 - Gradient: `#cba98e` to `#a8846d`
 
-## Deployment
-
-### GitHub Pages
-
-1. Push your code to a GitHub repository
-2. Go to Settings > Pages
-3. Select source branch (usually `main` or `master`)
-4. Set folder to `/public`
-
-### Netlify
-
-1. Connect your GitHub repository to Netlify
-2. Set build command: `npm run build`
-3. Set publish directory: `public`
-4. Deploy!
-
-### Vercel
-
-1. Connect your GitHub repository to Vercel
-2. Set build command: `npm run build`
-3. Set output directory: `public`
-4. Deploy!
-
 ## Technologies Used
 
 - **Tailwind CSS** - Utility-first CSS framework
@@ -160,6 +187,18 @@ This project follows modern frontend best practices:
 - ✅ Standard npm script naming
 - ✅ Simplified project structure
 
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
 ## License
 
 MIT License - feel free to use this project for your own purposes.
+
+---
+
+**Built with ❤️ for Compatto Furnishing**
