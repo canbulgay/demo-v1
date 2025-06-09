@@ -20,7 +20,7 @@ A modern, responsive website for Compatto Furnishing - Greece's premier furnitur
 
 ```
 demo/
-├── public/
+├── docs/
 │   ├── index.html                    # Main HTML file
 │   ├── tailwind-output.css           # Generated CSS (after build)
 │   └── assets/
@@ -119,7 +119,7 @@ npm run format
    - Go to your repository on GitHub
    - Navigate to **Settings** → **Pages**
    - Under **Source**, select **Deploy from a branch**
-   - Choose **main** branch and **/public** folder
+   - Choose **main** branch and **/docs** folder
    - Click **Save**
 
 4. **Your site will be available at:**
@@ -131,14 +131,14 @@ npm run format
 
 1. Connect your GitHub repository to Netlify
 2. Set build command: `npm run build`
-3. Set publish directory: `public`
+3. Set publish directory: `docs`
 4. Deploy!
 
 ### Vercel
 
 1. Connect your GitHub repository to Vercel
 2. Set build command: `npm run build`
-3. Set output directory: `public`
+3. Set output directory: `docs`
 4. Deploy!
 
 ## Custom Features
