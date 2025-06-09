@@ -4,7 +4,7 @@ A modern, responsive website for Compatto Furnishing - Greece's premier furnitur
 
 ## 🌐 Live Demo
 
-**Visit the live website:** [Compatto Furnishing](https://yourusername.github.io/demo/)
+**Visit the live website:** [Compatto Furnishing](https://canbulgay.github.io/demo-v1/)
 
 ## Features
 
@@ -96,53 +96,6 @@ npm run format
 2. **Local Preview**: Run `npm run start` to view the website at `http://localhost:3000`
 3. **Production Build**: Run `npm run build` for minified CSS output
 
-## Deployment
-
-### GitHub Pages (Recommended)
-
-1. **Build the project**
-
-   ```bash
-   npm run build
-   ```
-
-2. **Push to GitHub**
-
-   ```bash
-   git add .
-   git commit -m "Build for GitHub Pages"
-   git push origin main
-   ```
-
-3. **Enable GitHub Pages**
-
-   - Go to your repository on GitHub
-   - Navigate to **Settings** → **Pages**
-   - Under **Source**, select **Deploy from a branch**
-   - Choose **main** branch and **/docs** folder
-   - Click **Save**
-
-4. **Your site will be available at:**
-   ```
-   https://yourusername.github.io/demo/
-   ```
-
-### Netlify
-
-1. Connect your GitHub repository to Netlify
-2. Set build command: `npm run build`
-3. Set publish directory: `docs`
-4. Deploy!
-
-### Vercel
-
-1. Connect your GitHub repository to Vercel
-2. Set build command: `npm run build`
-3. Set output directory: `docs`
-4. Deploy!
-
-## Custom Features
-
 ### Responsive Breakpoints
 
 - `2xl`: max-width 1980px
@@ -187,18 +140,8 @@ This project follows modern frontend best practices:
 - ✅ Standard npm script naming
 - ✅ Simplified project structure
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## License
 
 MIT License - feel free to use this project for your own purposes.
 
 ---
-
-**Built with ❤️ for Compatto Furnishing**
